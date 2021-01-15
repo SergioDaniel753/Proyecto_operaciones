@@ -48,7 +48,33 @@ namespace Web_OperacionesN.Controllers
             return num1 * num2;
         }
 
-       
+        [HttpGet]
+        [Route("división")]
+        public int Dividir(int num1, int num2)
+        {
+            if (num2 == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return num1 / num2;
+            }
+        }
+        [HttpPost]
+        [Route("división")]
+        public int División([FromHeader] int num1, [FromHeader] int num2)
+        {
+            if (num2 == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return num1 / num2;
+            }
+        }
+
 
 
     }
