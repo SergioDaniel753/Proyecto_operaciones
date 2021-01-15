@@ -35,8 +35,21 @@ namespace Web_OperacionesN.Controllers
         {
             return num1 - num2;
         }
+        [HttpGet]
+        [Route("multiplicación")]
+        public int multiplicación(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+        [HttpPost]
+        [Route("multiplicación")]
+        public int Multiplicar([FromHeader] int num1, [FromHeader] int num2)
+        {
+            return num1 * num2;
+        }
 
-        
+       
+
 
     }
 }
