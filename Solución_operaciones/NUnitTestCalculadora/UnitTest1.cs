@@ -93,5 +93,89 @@ namespace NUnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
         }
 
+        [Test]
+        public void TestRestaGet1()
+        {
+            //Arrangespreparación
+            int num1 = 20;
+            int num2 = 5;
+            int esperado = 15;
+            CalculatorController calc = new CalculatorController();
+
+            //Act=ejecución
+            int resultado = calc.resta(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestRestaPost1()
+        {
+            //Arrangespreparación
+            int num1 = 20;
+            int num2 = 5;
+            int esperado = 15;
+            CalculatorController calc = new CalculatorController();
+
+            //Act=ejecución
+            int resultado = calc.restar(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestRestaGet2()
+        {
+            int num1 = 40;
+            int num2 = 15;
+            int esperado = 25;
+            CalculatorController calc = new CalculatorController();
+
+            int resultado = calc.resta(num1, num2);
+
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestRestaPost2()
+        {
+            int num1 = 40;
+            int num2 = 15;
+            int esperado = 25;
+            CalculatorController calc = new CalculatorController();
+
+            int resultado = calc.restar(num1, num2);
+
+            Assert.AreEqual(esperado, resultado);
+        }
+
+
+        [Test]
+        public void TestRestaGet3()
+        {
+            int num1 = 100;
+            int num2 = 50;
+            int esperado = 50;
+            CalculatorController calc = new CalculatorController();
+
+            int resultado = calc.resta(num1, num2);
+
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestRestaPost3()
+        {
+            int num1 = 100;
+            int num2 = 50;
+            int esperado = 50;
+            CalculatorController calc = new CalculatorController();
+
+            int resultado = calc.restar(num1, num2);
+
+            Assert.AreEqual(esperado, resultado);
+        }
+
+
     }
 }
