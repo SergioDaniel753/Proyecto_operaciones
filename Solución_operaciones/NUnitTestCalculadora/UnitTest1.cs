@@ -267,5 +267,98 @@ namespace NUnitTestCalculadora
             //Assert=verificación
             Assert.AreEqual(esperado, resultado);
         }
+
+        [Test]
+        public void TestDivisiónGet1()
+        {
+            //Arrangespreparación
+            int num1 =368;
+            int num2 = 4;
+            int esperado= 92;
+            CalculatorController calc = new CalculatorController();
+
+            //Act=ejecución
+            int resultado = calc.Dividir(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestDivisiónPost1()
+        {
+            //Arrangespreparación
+            int num1 = 368;
+            int num2 = 4;
+            int esperado = 92;
+
+            //Act=ejecución
+            CalculatorController calc = new CalculatorController();
+
+            int resultado = calc.División(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestDivisiónGet2()
+        {
+            //Arrangespreparación
+            int num1 = 435;
+            int num2 = 6;
+            int esperado = 72;
+            CalculatorController calc = new CalculatorController();
+
+            //Act=ejecución
+            int resultado = calc.Dividir(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestDivisiónPost2()
+        {
+            //Arrangespreparación
+            int num1 = 435;
+            int num2 = 6;
+            int esperado = 72;
+
+            //Act=ejecución
+            CalculatorController calc = new CalculatorController();
+
+            int resultado = calc.División(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestDivisiónGet3()
+        {
+            //Arrangespreparación
+            int num1 = 657;
+            int num2 = 13;
+            int esperado = 50;
+            CalculatorController calc = new CalculatorController();
+
+            //Act=ejecución
+            int resultado = calc.Dividir(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+
+        [Test]
+        public void TestDivisiónPost3()
+        {
+            //Arrangespreparación
+            int num1 = 657;
+            int num2 = 13;
+            int esperado = 50;
+
+            //Act=ejecución
+            CalculatorController calc = new CalculatorController();
+
+            int resultado = calc.División(num1, num2);
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
     }
 }
